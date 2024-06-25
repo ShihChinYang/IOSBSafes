@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let subdir = Bundle.main.resourceURL!.appendingPathComponent("out").path
+        webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
+        do {
+            try webServer.start(options:[
+                "Port": 8080,
+                "BindToLocalhost": true
+            ])
+        } catch {
+            fatalError("Can't start GCD web server")
+        }
         return true
     }
 

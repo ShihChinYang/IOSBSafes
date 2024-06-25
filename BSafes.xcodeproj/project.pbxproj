@@ -32,7 +32,7 @@
 		D58E912C2C23C6EA0017C57D /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
 		D58E912F2C23C95F0017C57D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
 		D5B355A22C2942D8000DEFA0 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
-		D5B355A42C2944FE000DEFA0 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D5B355A32C2944FE000DEFA0 /* out */; };
+		D5B355AA2C2A6750000DEFA0 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D5B355A92C2A6750000DEFA0 /* out */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,7 @@
 		D58E912E2C23C95F0017C57D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D58E91302C23D2B30017C57D /* GCDWebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5B355A12C2942D8000DEFA0 /* confidentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confidentials.swift; sourceTree = "<group>"; };
-		D5B355A32C2944FE000DEFA0 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
+		D5B355A92C2A6750000DEFA0 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 				D58E90D92C23C38B0017C57D /* Assets.xcassets */,
 				D58E90DB2C23C38B0017C57D /* LaunchScreen.storyboard */,
 				D58E90DE2C23C38B0017C57D /* Info.plist */,
-				D5B355A32C2944FE000DEFA0 /* out */,
+				D5B355A92C2A6750000DEFA0 /* out */,
 			);
 			path = BSafes;
 			sourceTree = "<group>";
@@ -366,7 +366,7 @@
 				D58E90DD2C23C38B0017C57D /* LaunchScreen.storyboard in Resources */,
 				D58E90DA2C23C38B0017C57D /* Assets.xcassets in Resources */,
 				D58E90D82C23C3890017C57D /* Main.storyboard in Resources */,
-				D5B355A42C2944FE000DEFA0 /* out in Resources */,
+				D5B355AA2C2A6750000DEFA0 /* out in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
@@ -598,7 +599,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,6 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
@@ -628,7 +630,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

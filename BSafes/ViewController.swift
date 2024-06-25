@@ -31,7 +31,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKSc
         webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
         webView.navigationDelegate = self
         webView.uiDelegate = self
-        webView.isInspectable = true
+        //webView.isInspectable = true
         let contentController = webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         view = webView
@@ -41,8 +41,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKSc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let url = URL(string: "http://localhost:8080/apps/<Product Name>.html")!
-        //let url = URL(string: "http://localhost:3000/apps/colors")!
+        let url = URL(string: "http://localhost:8080/apps/bsafes.html")!
+        //let url = URL(string: "http://localhost:3000/apps/bsafes")!
         webView.load(URLRequest(url: url))
     }
 
