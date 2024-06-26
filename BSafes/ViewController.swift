@@ -12,6 +12,7 @@ import StoreKit
 class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     
     var webView: WKWebView!
+    var localHost: String!
     var timer: Timer!
     var appLoaded: Bool = false
     var pendingTransaction: Transaction? = nil
@@ -31,7 +32,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKSc
         webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
         webView.navigationDelegate = self
         webView.uiDelegate = self
-        //webView.isInspectable = true
+        webView.isInspectable = true
         let contentController = webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         view = webView
@@ -41,8 +42,15 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKSc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let url = URL(string: "http://localhost:8080/apps/bsafes.html")!
-        //let url = URL(string: "http://localhost:3000/apps/bsafes")!
+        let testWith3000 = true
+        let url: URL!
+        if !testWith3000 {
+            url = URL(string: "http://localhost:8080/apps/bsafes.html")!
+            localHost = "http://localhost:8080"
+        } else {
+            url = URL(string: "http://localhost:3000/apps/bsafes")!
+            localHost = "http://localhost:3000"
+        }
         webView.load(URLRequest(url: url))
     }
 
@@ -117,19 +125,35 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKSc
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .linkActivated  {
             if let url = navigationAction.request.url {
-                let path = url.path
-                if path == "/external/payment" {
-                    let bsafesHost = "https://v2.bsafes.com"
-                    let externalURL = URL(string: "\(bsafesHost)/logIn?toPath=/services/payment")
-                    guard (externalURL != nil) else {
-                        return
-                    }
-                    UIApplication.shared.open(externalURL!)
+                if let host = url.host, !host.hasPrefix("v2.bsafes.com"), !host.hasPrefix("www.bsafes.com"), !host.hasPrefix("bsafes.com") {
+                    UIApplication.shared.open(url)
                     decisionHandler(.cancel)
                     return
                 } else {
-                    decisionHandler(.allow)
-                    return
+                    let path = url.path
+                    if path == "/external/payment" {
+                        let bsafesHost = "https://v2.bsafes.com"
+                        let externalURL = URL(string: "\(bsafesHost)/logIn?toPath=/services/payment")
+                        guard (externalURL != nil) else {
+                            return
+                        }
+                        UIApplication.shared.open(externalURL!)
+                        decisionHandler(.cancel)
+                        return
+                    } else {
+                        if let host = url.host, !host.hasPrefix("localhost") {
+                            let path = url.path
+                            let internalURL = URL(string: "\(localHost!)\(path)")
+                            guard (internalURL != nil) else {
+                                return
+                            }
+                            webView.load(URLRequest(url: internalURL!))
+                            decisionHandler(.cancel)
+                        } else {
+                            decisionHandler(.allow)
+                        }
+                        return
+                    }
                 }
             }
         } else {
