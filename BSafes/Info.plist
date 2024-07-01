@@ -2,22 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDisplayName</key>
-	<string>BSafes</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-    <key>WKAppBoundDomains</key>
-    <array>
-        <string>localhost:8080</string>
-        <string>bsafes.com</string>
-    </array>
-    <key>NSCameraUsageDescription</key>
-    <string>Allows you to take a photo or video.</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Allows you to use the microphone.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -37,5 +26,18 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>WKAppBoundDomains</key>
+	<array>
+		<string>localhost:8080</string>
+		<string>bsafes.com</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Allows you to take a photo or video.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allows you to use the microphone.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
