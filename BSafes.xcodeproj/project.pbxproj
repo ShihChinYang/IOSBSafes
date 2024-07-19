@@ -11,7 +11,6 @@
 		D5609D182C2E8F10006FAC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
 		D5609D1B2C2E92BF006FAC30 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
 		D5609D1D2C2E9798006FAC30 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
-		D57835B12C3BCDDA004ED2F7 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57835B02C3BCDDA004ED2F7 /* out */; };
 		D58E90D12C23C3890017C57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
 		D58E90D32C23C3890017C57D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
 		D58E90D52C23C3890017C57D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
@@ -36,6 +35,7 @@
 		D58E912F2C23C95F0017C57D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
 		D5B355A22C2942D8000DEFA0 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
 		D5CC0C692C3667240026AC93 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5F4D5CA2C4A64D2001A818C /* out in Resources */ = {isa = PBXBuildFile; fileRef = D5F4D5C92C4A64D2001A818C /* out */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5609D1A2C2E92BF006FAC30 /* safes_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safes_360.png; sourceTree = "<group>"; };
 		D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSafesIOSAppIcon.png; sourceTree = "<group>"; };
-		D57835B02C3BCDDA004ED2F7 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
 		D58E90CD2C23C3890017C57D /* BSafes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSafes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58E90D02C23C3890017C57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58E90D22C23C3890017C57D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		D58E91302C23D2B30017C57D /* GCDWebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5B355A12C2942D8000DEFA0 /* confidentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confidentials.swift; sourceTree = "<group>"; };
 		D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitHelper.swift; sourceTree = "<group>"; };
+		D5F4D5C92C4A64D2001A818C /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 				D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */,
 				D58E90D92C23C38B0017C57D /* Assets.xcassets */,
 				D58E90DE2C23C38B0017C57D /* Info.plist */,
-				D57835B02C3BCDDA004ED2F7 /* out */,
+				D5F4D5C92C4A64D2001A818C /* out */,
 				D5609D192C2E92B0006FAC30 /* images */,
 			);
 			path = BSafes;
@@ -383,7 +383,7 @@
 				D5609D1D2C2E9798006FAC30 /* BSafesIOSAppIcon.png in Resources */,
 				D5609D1B2C2E92BF006FAC30 /* safes_360.png in Resources */,
 				D58E90DA2C23C38B0017C57D /* Assets.xcassets in Resources */,
-				D57835B12C3BCDDA004ED2F7 /* out in Resources */,
+				D5F4D5CA2C4A64D2001A818C /* out in Resources */,
 				D5609D182C2E8F10006FAC30 /* LaunchScreen.storyboard in Resources */,
 				D58E90D82C23C3890017C57D /* Main.storyboard in Resources */,
 			);

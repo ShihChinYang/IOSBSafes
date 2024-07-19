@@ -3,4 +3,54 @@
    uuid = "2BB4CE96-E8BE-48A7-A9F2-96E16A02FC93"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1553F00-9D6E-4D10-84E3-A28D6DA82FDF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BSafes/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "fireTimer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1553F00-9D6E-4D10-84E3-A28D6DA82FDF - b8be1dbfeee2c3f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BSafes.ViewController.fireTimer() -&gt; ()"
+                  moduleName = "BSafes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro-syang/WuNanTech/iOS/BSafes/BSafes/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "775">
+               </Location>
+               <Location
+                  uuid = "C1553F00-9D6E-4D10-84E3-A28D6DA82FDF - b8be1dbfeee2c3f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BSafes.ViewController.fireTimer() -&gt; ()"
+                  moduleName = "BSafes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookpro-syang/WuNanTech/iOS/BSafes/BSafes/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
