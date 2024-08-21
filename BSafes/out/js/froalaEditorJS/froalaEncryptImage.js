@@ -4,6 +4,8 @@
  * Copyright 2014-2017 Froala Labs
  */
 
+const { downScaleImage } = require('./bsafesAPIHooks');
+
 (function (factory) {
 
     if (typeof define === 'function' && define.amd) {
@@ -57,7 +59,7 @@
     imageResize: true,
     imageResizeWithPercent: false,
     imageRoundPercent: false,
-    imageDefaultWidth: 300,
+    //imageDefaultWidth: 300,
     imageDefaultAlign: 'center',
     imageDefaultDisplay: 'block',
     imageSplitHTML: false,
@@ -933,12 +935,11 @@
      */
     function _startUpload (image, $image_placeholder) {
 			var imageDataInBinaryString;
+      var imageWidth, imageHeight;
       var s3ObjectSize;
 			var exifOrientation;
 
       function _sendRequest () {
-				var imageWidth = this.width;
-        var imageHeight = this.height;
 	
 				var $img = $(this);
 
@@ -1050,11 +1051,14 @@
       }
 
       var reader = new FileReader();
-      var $img;
+      var img, $img, exifOrientation;
+      var link = window.URL.createObjectURL(image);
 
-      reader.addEventListener('load', function () {
-				imageDataInBinaryString = reader.result;			
-        var link = window.URL.createObjectURL(image);
+      const imageLoaded = async () => {
+				const result = await downScaleImage(img, exifOrientation, 720);
+        imageDataInBinaryString = result.byteString;
+        imageWidth = result.width;
+        imageHeight = result.height;
 
 	      if (!$image_placeholder) {
   	      $img = _addImage(link, null, _sendRequest);
@@ -1070,9 +1074,11 @@
           $image_placeholder.data('fr-old-src', $image_placeholder.attr('src'));
           $image_placeholder.attr('src', link);
         }
-      });
+      };
 
-			reader.readAsBinaryString(image);
+      img = new Image();
+      img.src = link;
+			img.onload = imageLoaded;
 			editor.popups.hide('image.insert');
     }
 

@@ -39,7 +39,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         let contentController = self.webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         self.view = self.webView
-        let testWith3000 = true
+        let testWith3000 = false
         let url: URL!
         if !testWith3000 {
             url = URL(string: "http://localhost:8080/apps/bsafes.html")!
@@ -68,7 +68,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     }
     
     override func loadView() {
-        let webViewConfiguration = WKWebViewConfiguration();
         addWebView()
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
