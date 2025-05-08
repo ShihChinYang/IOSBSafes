@@ -37,6 +37,8 @@
 	<string>Allows you to take a photo or video.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allows you to use the microphone.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Allowing saving to photos</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 </dict>

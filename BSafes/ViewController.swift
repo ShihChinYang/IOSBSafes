@@ -35,7 +35,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         self.webView.autoresizingMask = [.flexibleWidth, .flexibleHeight ]
         self.webView.navigationDelegate = self
         self.webView.uiDelegate = self
-        //webView.isInspectable = true
+        webView.isInspectable = true
         let contentController = self.webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         self.view = self.webView
