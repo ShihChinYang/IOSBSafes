@@ -42,7 +42,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         let testWith3000 = false
         let url: URL!
         if !testWith3000 {
-            url = URL(string: "http://localhost:8080/apps/bsafes.html")!
+            url = URL(string: "http://localhost:8080")!
             self.localHost = "http://localhost:8080"
         } else {
             url = URL(string: "http://localhost:3000/apps/bsafes")!
