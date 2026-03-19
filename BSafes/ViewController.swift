@@ -45,7 +45,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
             url = URL(string: "http://localhost:8080")!
             self.localHost = "http://localhost:8080"
         } else {
-            url = URL(string: "http://localhost:3000/apps/bsafes")!
+            url = URL(string: "http://localhost:3000")!
             self.localHost = "http://localhost:3000"
         }
         self.webView.load(URLRequest(url: url))
@@ -62,7 +62,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                 print("pingFromNative result: \(result)")
             } else if let error = error {
                 print("An error occurred: \(error)")
-                self.addWebView()
+                //self.addWebView()
             }
         }
     }
@@ -72,8 +72,21 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
+    @objc func appDidBecomeActive() {
+        print("App did become active (UIViewController)")
+        let script = "window.bsafesNative.pingFromNative();"
+        webView.evaluateJavaScript(script) { (result, error) in
+            if let result = result {
+                print("pingFromNative result: \(result)")
+            } else if let error = error {
+                print("An error occurred: \(error)")
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
 
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {

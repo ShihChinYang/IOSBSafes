@@ -3,20 +3,169 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53153EC2E125E7100390874 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D53153EB2E125E7100390874 /* out */; };
+		D51E4F732F61126200855AF2 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D51E4F742F61126200855AF2 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D51E4F752F61126200855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D51E4F762F61126200855AF2 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D51E4F772F61126200855AF2 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D51E4F782F61126200855AF2 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D51E4F792F61126200855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D51E4F7A2F61126200855AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D51E4F7B2F61126200855AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D51E4F7C2F61126200855AF2 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D51E4F7D2F61126200855AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D51E4F7E2F61126200855AF2 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D51E4F7F2F61126200855AF2 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D51E4F802F61126200855AF2 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D51E4F812F61126200855AF2 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D51E4F822F61126200855AF2 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D51E4F832F61126200855AF2 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D51E4F842F61126200855AF2 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D51E4F852F61126200855AF2 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D51E4F872F61126200855AF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D51E4F892F61126200855AF2 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D51E4F8A2F61126200855AF2 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D51E4F8B2F61126200855AF2 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D51E4F8C2F61126200855AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D51E4F8D2F61126200855AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D51E4F9C2F61325100855AF2 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D51E4F9D2F61325100855AF2 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D51E4F9E2F61325100855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D51E4F9F2F61325100855AF2 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D51E4FA02F61325100855AF2 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D51E4FA12F61325100855AF2 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D51E4FA22F61325100855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D51E4FA32F61325100855AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D51E4FA42F61325100855AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D51E4FA52F61325100855AF2 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D51E4FA62F61325100855AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D51E4FA72F61325100855AF2 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D51E4FA82F61325100855AF2 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D51E4FA92F61325100855AF2 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D51E4FAA2F61325100855AF2 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D51E4FAB2F61325100855AF2 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D51E4FAC2F61325100855AF2 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D51E4FAD2F61325100855AF2 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D51E4FAE2F61325100855AF2 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D51E4FB02F61325100855AF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D51E4FB22F61325100855AF2 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D51E4FB32F61325100855AF2 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D51E4FB42F61325100855AF2 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D51E4FB52F61325100855AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D51E4FB62F61325100855AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D51E4FCA2F613F0000855AF2 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D51E4FCB2F613F0000855AF2 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D51E4FCC2F613F0000855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D51E4FCD2F613F0000855AF2 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D51E4FCE2F613F0000855AF2 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D51E4FCF2F613F0000855AF2 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D51E4FD02F613F0000855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D51E4FD12F613F0000855AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D51E4FD22F613F0000855AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D51E4FD32F613F0000855AF2 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D51E4FD42F613F0000855AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D51E4FD52F613F0000855AF2 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D51E4FD62F613F0000855AF2 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D51E4FD72F613F0000855AF2 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D51E4FD82F613F0000855AF2 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D51E4FD92F613F0000855AF2 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D51E4FDA2F613F0000855AF2 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D51E4FDB2F613F0000855AF2 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D51E4FDC2F613F0000855AF2 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D51E4FDE2F613F0000855AF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D51E4FE02F613F0000855AF2 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D51E4FE12F613F0000855AF2 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D51E4FE22F613F0000855AF2 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D51E4FE32F613F0000855AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D51E4FE42F613F0000855AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D51E4FF22F61453900855AF2 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D51E4FF32F61453900855AF2 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D51E4FF42F61453900855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D51E4FF52F61453900855AF2 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D51E4FF62F61453900855AF2 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D51E4FF72F61453900855AF2 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D51E4FF82F61453900855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D51E4FF92F61453900855AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D51E4FFA2F61453900855AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D51E4FFB2F61453900855AF2 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D51E4FFC2F61453900855AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D51E4FFD2F61453900855AF2 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D51E4FFE2F61453900855AF2 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D51E4FFF2F61453900855AF2 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D51E50002F61453900855AF2 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D51E50012F61453900855AF2 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D51E50022F61453900855AF2 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D51E50032F61453900855AF2 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D51E50042F61453900855AF2 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D51E50062F61453900855AF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D51E50082F61453900855AF2 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D51E50092F61453900855AF2 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D51E500A2F61453900855AF2 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D51E500B2F61453900855AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D51E500C2F61453900855AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D550A75E2F6A4F8F00869595 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D550A75F2F6A4F8F00869595 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D550A7602F6A4F8F00869595 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D550A7612F6A4F8F00869595 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D550A7622F6A4F8F00869595 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D550A7632F6A4F8F00869595 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D550A7642F6A4F8F00869595 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D550A7652F6A4F8F00869595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D550A7662F6A4F8F00869595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D550A7672F6A4F8F00869595 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D550A7682F6A4F8F00869595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D550A7692F6A4F8F00869595 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D550A76A2F6A4F8F00869595 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D550A76B2F6A4F8F00869595 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D550A76C2F6A4F8F00869595 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D550A76D2F6A4F8F00869595 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D550A76E2F6A4F8F00869595 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D550A76F2F6A4F8F00869595 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D550A7702F6A4F8F00869595 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D550A7722F6A4F8F00869595 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D550A7742F6A4F8F00869595 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D550A7752F6A4F8F00869595 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D550A7762F6A4F8F00869595 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D550A7772F6A4F8F00869595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D550A7782F6A4F8F00869595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D550A7862F6A97E400869595 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D550A7872F6A97E400869595 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D550A7882F6A97E400869595 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D550A7892F6A97E400869595 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D550A78A2F6A97E400869595 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D550A78B2F6A97E400869595 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D550A78C2F6A97E400869595 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D550A78D2F6A97E400869595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D550A78E2F6A97E400869595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D550A78F2F6A97E400869595 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D550A7902F6A97E400869595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D550A7912F6A97E400869595 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D550A7922F6A97E400869595 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D550A7932F6A97E400869595 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D550A7942F6A97E400869595 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D550A7952F6A97E400869595 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D550A7962F6A97E400869595 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D550A7972F6A97E400869595 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D550A7982F6A97E400869595 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D550A79A2F6A97E400869595 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D550A79C2F6A97E400869595 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D550A79D2F6A97E400869595 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D550A79E2F6A97E400869595 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D550A79F2F6A97E400869595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D550A7A02F6A97E400869595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
 		D55134F02C25277600D31E28 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
 		D5609D182C2E8F10006FAC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
 		D5609D1B2C2E92BF006FAC30 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
 		D5609D1D2C2E9798006FAC30 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D57D293F2F581D0000082224 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
 		D58E90D12C23C3890017C57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
 		D58E90D32C23C3890017C57D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
 		D58E90D52C23C3890017C57D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
 		D58E90D82C23C3890017C57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
-		D58E90DA2C23C38B0017C57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D92C23C38B0017C57D /* Assets.xcassets */; };
 		D58E90E82C23C38C0017C57D /* BSafesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90E72C23C38C0017C57D /* BSafesTests.swift */; };
 		D58E90F22C23C38C0017C57D /* BSafesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90F12C23C38C0017C57D /* BSafesUITests.swift */; };
 		D58E90F42C23C38C0017C57D /* BSafesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90F32C23C38C0017C57D /* BSafesUITestsLaunchTests.swift */; };
@@ -34,8 +183,108 @@
 		D58E912B2C23C6EA0017C57D /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
 		D58E912C2C23C6EA0017C57D /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
 		D58E912F2C23C95F0017C57D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5A351232F625AC4004CC57F /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D5A351242F625AC4004CC57F /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D5A351252F625AC4004CC57F /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D5A351262F625AC4004CC57F /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D5A351272F625AC4004CC57F /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D5A351282F625AC4004CC57F /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D5A351292F625AC4004CC57F /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D5A3512A2F625AC4004CC57F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D5A3512B2F625AC4004CC57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D5A3512C2F625AC4004CC57F /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D5A3512D2F625AC4004CC57F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D5A3512E2F625AC4004CC57F /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D5A3512F2F625AC4004CC57F /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D5A351302F625AC4004CC57F /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D5A351312F625AC4004CC57F /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D5A351322F625AC4004CC57F /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D5A351332F625AC4004CC57F /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D5A351342F625AC4004CC57F /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5A351352F625AC4004CC57F /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D5A351372F625AC4004CC57F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5A351392F625AC4004CC57F /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D5A3513A2F625AC4004CC57F /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D5A3513B2F625AC4004CC57F /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D5A3513C2F625AC4004CC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D5A3513D2F625AC4004CC57F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
 		D5B355A22C2942D8000DEFA0 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
 		D5CC0C692C3667240026AC93 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5D39F9A2F63B0AE005D8F71 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D5D39F9B2F63B0AE005D8F71 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D5D39F9C2F63B0AE005D8F71 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D5D39F9D2F63B0AE005D8F71 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D5D39F9E2F63B0AE005D8F71 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D5D39F9F2F63B0AE005D8F71 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D5D39FA02F63B0AE005D8F71 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D5D39FA12F63B0AE005D8F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D5D39FA22F63B0AE005D8F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D5D39FA32F63B0AE005D8F71 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D5D39FA42F63B0AE005D8F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D5D39FA52F63B0AE005D8F71 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D5D39FA62F63B0AE005D8F71 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D5D39FA72F63B0AE005D8F71 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D5D39FA82F63B0AE005D8F71 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D5D39FA92F63B0AE005D8F71 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D5D39FAA2F63B0AE005D8F71 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D5D39FAB2F63B0AE005D8F71 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5D39FAC2F63B0AE005D8F71 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D5D39FAE2F63B0AE005D8F71 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5D39FB02F63B0AE005D8F71 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D5D39FB12F63B0AE005D8F71 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D5D39FB22F63B0AE005D8F71 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D5D39FB32F63B0AE005D8F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D5D39FB42F63B0AE005D8F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D5E0768B2F67C8A300BA3620 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D5E0768C2F67C8A300BA3620 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D5E0768D2F67C8A300BA3620 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D5E0768E2F67C8A300BA3620 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D5E0768F2F67C8A300BA3620 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D5E076902F67C8A300BA3620 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D5E076912F67C8A300BA3620 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D5E076922F67C8A300BA3620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D5E076932F67C8A300BA3620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D5E076942F67C8A300BA3620 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D5E076952F67C8A300BA3620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D5E076962F67C8A300BA3620 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D5E076972F67C8A300BA3620 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D5E076982F67C8A300BA3620 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D5E076992F67C8A300BA3620 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D5E0769A2F67C8A300BA3620 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D5E0769B2F67C8A300BA3620 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D5E0769C2F67C8A300BA3620 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5E0769D2F67C8A300BA3620 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D5E0769F2F67C8A300BA3620 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5E076A12F67C8A300BA3620 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D5E076A22F67C8A300BA3620 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D5E076A32F67C8A300BA3620 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D5E076A42F67C8A300BA3620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D5E076A52F67C8A300BA3620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
+		D5E076B32F67D82500BA3620 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
+		D5E076B42F67D82500BA3620 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
+		D5E076B52F67D82500BA3620 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
+		D5E076B62F67D82500BA3620 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
+		D5E076B72F67D82500BA3620 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91142C23C6EA0017C57D /* GCDWebServerDataResponse.m */; };
+		D5E076B82F67D82500BA3620 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910B2C23C6EA0017C57D /* GCDWebServer.m */; };
+		D5E076B92F67D82500BA3620 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911B2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.m */; };
+		D5E076BA2F67D82500BA3620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D42C23C3890017C57D /* ViewController.swift */; };
+		D5E076BB2F67D82500BA3620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D02C23C3890017C57D /* AppDelegate.swift */; };
+		D5E076BC2F67D82500BA3620 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910A2C23C6EA0017C57D /* GCDWebServerFunctions.m */; };
+		D5E076BD2F67D82500BA3620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58E90D22C23C3890017C57D /* SceneDelegate.swift */; };
+		D5E076BE2F67D82500BA3620 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91042C23C6EA0017C57D /* GCDWebServerResponse.m */; };
+		D5E076BF2F67D82500BA3620 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91112C23C6EA0017C57D /* GCDWebServerErrorResponse.m */; };
+		D5E076C02F67D82500BA3620 /* confidentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B355A12C2942D8000DEFA0 /* confidentials.swift */; };
+		D5E076C12F67D82500BA3620 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E910C2C23C6EA0017C57D /* GCDWebServerConnection.m */; };
+		D5E076C22F67D82500BA3620 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91072C23C6EA0017C57D /* GCDWebServerRequest.m */; };
+		D5E076C32F67D82500BA3620 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91132C23C6EA0017C57D /* GCDWebServerFileResponse.m */; };
+		D5E076C42F67D82500BA3620 /* StoreKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */; };
+		D5E076C52F67D82500BA3620 /* CheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55134EF2C25277600D31E28 /* CheckOut.swift */; };
+		D5E076C72F67D82500BA3620 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5E076C92F67D82500BA3620 /* BSafesIOSAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */; };
+		D5E076CA2F67D82500BA3620 /* safes_360.png in Resources */ = {isa = PBXBuildFile; fileRef = D5609D1A2C2E92BF006FAC30 /* safes_360.png */; };
+		D5E076CB2F67D82500BA3620 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57D293E2F581CF800082224 /* out */; };
+		D5E076CC2F67D82500BA3620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */; };
+		D5E076CD2F67D82500BA3620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58E90D62C23C3890017C57D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,17 +305,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D53153EB2E125E7100390874 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
+		D51E4F912F61126200855AF2 /* AP01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AP01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51E4FBA2F61325100855AF2 /* AP02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AP02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51E4FE82F613F0000855AF2 /* AP03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AP03.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51E50102F61453900855AF2 /* AL01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AL01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D550A77C2F6A4F8F00869595 /* AS06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS06.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D550A7A42F6A97E400869595 /* AS07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS07.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55134EF2C25277600D31E28 /* CheckOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOut.swift; sourceTree = "<group>"; };
 		D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5609D1A2C2E92BF006FAC30 /* safes_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safes_360.png; sourceTree = "<group>"; };
 		D5609D1C2C2E9798006FAC30 /* BSafesIOSAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BSafesIOSAppIcon.png; sourceTree = "<group>"; };
+		D57D293E2F581CF800082224 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
 		D58E90CD2C23C3890017C57D /* BSafes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSafes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58E90D02C23C3890017C57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58E90D22C23C3890017C57D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D58E90D42C23C3890017C57D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D58E90D72C23C3890017C57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D58E90D92C23C38B0017C57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58E90DE2C23C38B0017C57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58E90E32C23C38C0017C57D /* BSafesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSafesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58E90E72C23C38C0017C57D /* BSafesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSafesTests.swift; sourceTree = "<group>"; };
@@ -103,11 +357,307 @@
 		D58E911F2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 		D58E912E2C23C95F0017C57D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D58E91302C23D2B30017C57D /* GCDWebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5A351412F625AC4004CC57F /* AF01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AF01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B355A12C2942D8000DEFA0 /* confidentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confidentials.swift; sourceTree = "<group>"; };
 		D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitHelper.swift; sourceTree = "<group>"; };
+		D5D39FB82F63B0AE005D8F71 /* AS11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E076A92F67C8A300BA3620 /* AS02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E076D12F67D82500BA3620 /* AS04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D51E4F922F61126200855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D51E4F712F61126200855AF2 /* AP01 */;
+		};
+		D51E4FBB2F61325100855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D51E4F9A2F61325100855AF2 /* AP02 */;
+		};
+		D51E4FBC2F61325100855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D51E4F9A2F61325100855AF2 /* AP02 */;
+		};
+		D51E4FC32F61340E00855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D58E90CC2C23C3890017C57D /* BSafes */;
+		};
+		D51E4FC42F61340E00855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D51E4F712F61126200855AF2 /* AP01 */;
+		};
+		D51E4FE92F613F0000855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D51E4FC82F613F0000855AF2 /* AP03 */;
+		};
+		D51E4FEA2F613F0000855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D51E4FC82F613F0000855AF2 /* AP03 */;
+		};
+		D51E50112F61453900855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D51E4FF02F61453900855AF2 /* AL01 */;
+		};
+		D51E50122F61453900855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D51E4FF02F61453900855AF2 /* AL01 */;
+		};
+		D550A77D2F6A4F8F00869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D550A75C2F6A4F8F00869595 /* AS06 */;
+		};
+		D550A77E2F6A4F8F00869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D550A75C2F6A4F8F00869595 /* AS06 */;
+		};
+		D550A7A52F6A97E400869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D550A7842F6A97E400869595 /* AS07 */;
+		};
+		D550A7A62F6A97E400869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D550A7842F6A97E400869595 /* AS07 */;
+		};
+		D5A351422F625AC4004CC57F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D5A351212F625AC4004CC57F /* AF01 */;
+		};
+		D5A351432F625AC4004CC57F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D5A351212F625AC4004CC57F /* AF01 */;
+		};
+		D5D39FB92F63B0AE005D8F71 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+			);
+			target = D5D39F982F63B0AE005D8F71 /* AS11 */;
+		};
+		D5D39FBA2F63B0AE005D8F71 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D5D39F982F63B0AE005D8F71 /* AS11 */;
+		};
+		D5E076AA2F67C8A300BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS04/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D5E076892F67C8A300BA3620 /* AS02 */;
+		};
+		D5E076AB2F67C8A300BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D5E076892F67C8A300BA3620 /* AS02 */;
+		};
+		D5E076D22F67D82500BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AF01/Assets.xcassets,
+				AL01/Assets.xcassets,
+				AP01/Assets.xcassets,
+				AP02/Assets.xcassets,
+				AP03/Assets.xcassets,
+				AS02/Assets.xcassets,
+				AS06/Assets.xcassets,
+				AS07/Assets.xcassets,
+				AS11/Assets.xcassets,
+			);
+			target = D5E076B12F67D82500BA3620 /* AS04 */;
+		};
+		D5E076D32F67D82500BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = D5E076B12F67D82500BA3620 /* AS04 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D51E4F962F6114AE00855AF2 /* products */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D51E4FC32F61340E00855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E4FC42F61340E00855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E4FBB2F61325100855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E4FE92F613F0000855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E50112F61453900855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5A351422F625AC4004CC57F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5D39FB92F63B0AE005D8F71 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5E076AA2F67C8A300BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5E076D22F67D82500BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D550A77D2F6A4F8F00869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D550A7A52F6A97E400869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = products; sourceTree = "<group>"; };
+		D57D24A62F58130200082224 /* ATest */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ATest; sourceTree = "<group>"; };
+		D57D29402F5826B900082224 /* A001 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D51E4F922F61126200855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E4FBC2F61325100855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E4FEA2F613F0000855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D51E50122F61453900855AF2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5A351432F625AC4004CC57F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5D39FBA2F63B0AE005D8F71 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5E076AB2F67C8A300BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D5E076D32F67D82500BA3620 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D550A77E2F6A4F8F00869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, D550A7A62F6A97E400869595 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = A001; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		D51E4F862F61126200855AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4F872F61126200855AF2 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FAF2F61325100855AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FB02F61325100855AF2 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FDD2F613F0000855AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FDE2F613F0000855AF2 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E50052F61453900855AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E50062F61453900855AF2 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A7712F6A4F8F00869595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A7722F6A4F8F00869595 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A7992F6A97E400869595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A79A2F6A97E400869595 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58E90CA2C23C3890017C57D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +677,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A351362F625AC4004CC57F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A351372F625AC4004CC57F /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D39FAD2F63B0AE005D8F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D39FAE2F63B0AE005D8F71 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E0769E2F67C8A300BA3620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E0769F2F67C8A300BA3620 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E076C62F67D82500BA3620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E076C72F67D82500BA3620 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +733,7 @@
 				D58E90CF2C23C3890017C57D /* BSafes */,
 				D58E90E62C23C38C0017C57D /* BSafesTests */,
 				D58E90F02C23C38C0017C57D /* BSafesUITests */,
+				D57D24A62F58130200082224 /* ATest */,
 				D58E90CE2C23C3890017C57D /* Products */,
 				D58E912D2C23C95E0017C57D /* Frameworks */,
 			);
@@ -162,6 +745,16 @@
 				D58E90CD2C23C3890017C57D /* BSafes.app */,
 				D58E90E32C23C38C0017C57D /* BSafesTests.xctest */,
 				D58E90ED2C23C38C0017C57D /* BSafesUITests.xctest */,
+				D51E4F912F61126200855AF2 /* AP01.app */,
+				D51E4FBA2F61325100855AF2 /* AP02.app */,
+				D51E4FE82F613F0000855AF2 /* AP03.app */,
+				D51E50102F61453900855AF2 /* AL01.app */,
+				D5A351412F625AC4004CC57F /* AF01.app */,
+				D5D39FB82F63B0AE005D8F71 /* AS11.app */,
+				D5E076A92F67C8A300BA3620 /* AS02.app */,
+				D5E076D12F67D82500BA3620 /* AS04.app */,
+				D550A77C2F6A4F8F00869595 /* AS06.app */,
+				D550A7A42F6A97E400869595 /* AS07.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +769,10 @@
 				D5CC0C682C3667240026AC93 /* StoreKitHelper.swift */,
 				D58E90D62C23C3890017C57D /* Main.storyboard */,
 				D5609D172C2E8F10006FAC30 /* LaunchScreen.storyboard */,
-				D58E90D92C23C38B0017C57D /* Assets.xcassets */,
-				D53153EB2E125E7100390874 /* out */,
+				D57D293E2F581CF800082224 /* out */,
+				D57D29402F5826B900082224 /* A001 */,
 				D58E90DE2C23C38B0017C57D /* Info.plist */,
+				D51E4F962F6114AE00855AF2 /* products */,
 				D5609D192C2E92B0006FAC30 /* images */,
 			);
 			path = BSafes;
@@ -279,6 +873,132 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D51E4F712F61126200855AF2 /* AP01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51E4F8E2F61126200855AF2 /* Build configuration list for PBXNativeTarget "AP01" */;
+			buildPhases = (
+				D51E4F722F61126200855AF2 /* Sources */,
+				D51E4F862F61126200855AF2 /* Frameworks */,
+				D51E4F882F61126200855AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AP01;
+			productName = BSafes;
+			productReference = D51E4F912F61126200855AF2 /* AP01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D51E4F9A2F61325100855AF2 /* AP02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51E4FB72F61325100855AF2 /* Build configuration list for PBXNativeTarget "AP02" */;
+			buildPhases = (
+				D51E4F9B2F61325100855AF2 /* Sources */,
+				D51E4FAF2F61325100855AF2 /* Frameworks */,
+				D51E4FB12F61325100855AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AP02;
+			productName = BSafes;
+			productReference = D51E4FBA2F61325100855AF2 /* AP02.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D51E4FC82F613F0000855AF2 /* AP03 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51E4FE52F613F0000855AF2 /* Build configuration list for PBXNativeTarget "AP03" */;
+			buildPhases = (
+				D51E4FC92F613F0000855AF2 /* Sources */,
+				D51E4FDD2F613F0000855AF2 /* Frameworks */,
+				D51E4FDF2F613F0000855AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AP03;
+			productName = BSafes;
+			productReference = D51E4FE82F613F0000855AF2 /* AP03.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D51E4FF02F61453900855AF2 /* AL01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51E500D2F61453900855AF2 /* Build configuration list for PBXNativeTarget "AL01" */;
+			buildPhases = (
+				D51E4FF12F61453900855AF2 /* Sources */,
+				D51E50052F61453900855AF2 /* Frameworks */,
+				D51E50072F61453900855AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AL01;
+			productName = BSafes;
+			productReference = D51E50102F61453900855AF2 /* AL01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D550A75C2F6A4F8F00869595 /* AS06 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D550A7792F6A4F8F00869595 /* Build configuration list for PBXNativeTarget "AS06" */;
+			buildPhases = (
+				D550A75D2F6A4F8F00869595 /* Sources */,
+				D550A7712F6A4F8F00869595 /* Frameworks */,
+				D550A7732F6A4F8F00869595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AS06;
+			productName = BSafes;
+			productReference = D550A77C2F6A4F8F00869595 /* AS06.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D550A7842F6A97E400869595 /* AS07 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D550A7A12F6A97E400869595 /* Build configuration list for PBXNativeTarget "AS07" */;
+			buildPhases = (
+				D550A7852F6A97E400869595 /* Sources */,
+				D550A7992F6A97E400869595 /* Frameworks */,
+				D550A79B2F6A97E400869595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AS07;
+			productName = BSafes;
+			productReference = D550A7A42F6A97E400869595 /* AS07.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D58E90CC2C23C3890017C57D /* BSafes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D58E90F72C23C38C0017C57D /* Build configuration list for PBXNativeTarget "BSafes" */;
@@ -290,6 +1010,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
 			);
 			name = BSafes;
 			productName = BSafes;
@@ -332,6 +1056,90 @@
 			productReference = D58E90ED2C23C38C0017C57D /* BSafesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D5A351212F625AC4004CC57F /* AF01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A3513E2F625AC4004CC57F /* Build configuration list for PBXNativeTarget "AF01" */;
+			buildPhases = (
+				D5A351222F625AC4004CC57F /* Sources */,
+				D5A351362F625AC4004CC57F /* Frameworks */,
+				D5A351382F625AC4004CC57F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AF01;
+			productName = BSafes;
+			productReference = D5A351412F625AC4004CC57F /* AF01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5D39F982F63B0AE005D8F71 /* AS11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D39FB52F63B0AE005D8F71 /* Build configuration list for PBXNativeTarget "AS11" */;
+			buildPhases = (
+				D5D39F992F63B0AE005D8F71 /* Sources */,
+				D5D39FAD2F63B0AE005D8F71 /* Frameworks */,
+				D5D39FAF2F63B0AE005D8F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AS11;
+			productName = BSafes;
+			productReference = D5D39FB82F63B0AE005D8F71 /* AS11.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5E076892F67C8A300BA3620 /* AS02 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E076A62F67C8A300BA3620 /* Build configuration list for PBXNativeTarget "AS02" */;
+			buildPhases = (
+				D5E0768A2F67C8A300BA3620 /* Sources */,
+				D5E0769E2F67C8A300BA3620 /* Frameworks */,
+				D5E076A02F67C8A300BA3620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AS02;
+			productName = BSafes;
+			productReference = D5E076A92F67C8A300BA3620 /* AS02.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5E076B12F67D82500BA3620 /* AS04 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E076CE2F67D82500BA3620 /* Build configuration list for PBXNativeTarget "AS04" */;
+			buildPhases = (
+				D5E076B22F67D82500BA3620 /* Sources */,
+				D5E076C62F67D82500BA3620 /* Frameworks */,
+				D5E076C82F67D82500BA3620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D51E4F962F6114AE00855AF2 /* products */,
+				D57D29402F5826B900082224 /* A001 */,
+			);
+			name = AS04;
+			productName = BSafes;
+			productReference = D5E076D12F67D82500BA3620 /* AS04.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,7 +1147,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					D58E90CC2C23C3890017C57D = {
@@ -371,19 +1179,100 @@
 				D58E90CC2C23C3890017C57D /* BSafes */,
 				D58E90E22C23C38C0017C57D /* BSafesTests */,
 				D58E90EC2C23C38C0017C57D /* BSafesUITests */,
+				D51E4F712F61126200855AF2 /* AP01 */,
+				D51E4F9A2F61325100855AF2 /* AP02 */,
+				D51E4FC82F613F0000855AF2 /* AP03 */,
+				D51E4FF02F61453900855AF2 /* AL01 */,
+				D5A351212F625AC4004CC57F /* AF01 */,
+				D5D39F982F63B0AE005D8F71 /* AS11 */,
+				D5E076892F67C8A300BA3620 /* AS02 */,
+				D5E076B12F67D82500BA3620 /* AS04 */,
+				D550A75C2F6A4F8F00869595 /* AS06 */,
+				D550A7842F6A97E400869595 /* AS07 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D51E4F882F61126200855AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4F892F61126200855AF2 /* BSafesIOSAppIcon.png in Resources */,
+				D51E4F8A2F61126200855AF2 /* safes_360.png in Resources */,
+				D51E4F8B2F61126200855AF2 /* out in Resources */,
+				D51E4F8C2F61126200855AF2 /* LaunchScreen.storyboard in Resources */,
+				D51E4F8D2F61126200855AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FB12F61325100855AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FB22F61325100855AF2 /* BSafesIOSAppIcon.png in Resources */,
+				D51E4FB32F61325100855AF2 /* safes_360.png in Resources */,
+				D51E4FB42F61325100855AF2 /* out in Resources */,
+				D51E4FB52F61325100855AF2 /* LaunchScreen.storyboard in Resources */,
+				D51E4FB62F61325100855AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FDF2F613F0000855AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FE02F613F0000855AF2 /* BSafesIOSAppIcon.png in Resources */,
+				D51E4FE12F613F0000855AF2 /* safes_360.png in Resources */,
+				D51E4FE22F613F0000855AF2 /* out in Resources */,
+				D51E4FE32F613F0000855AF2 /* LaunchScreen.storyboard in Resources */,
+				D51E4FE42F613F0000855AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E50072F61453900855AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E50082F61453900855AF2 /* BSafesIOSAppIcon.png in Resources */,
+				D51E50092F61453900855AF2 /* safes_360.png in Resources */,
+				D51E500A2F61453900855AF2 /* out in Resources */,
+				D51E500B2F61453900855AF2 /* LaunchScreen.storyboard in Resources */,
+				D51E500C2F61453900855AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A7732F6A4F8F00869595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A7742F6A4F8F00869595 /* BSafesIOSAppIcon.png in Resources */,
+				D550A7752F6A4F8F00869595 /* safes_360.png in Resources */,
+				D550A7762F6A4F8F00869595 /* out in Resources */,
+				D550A7772F6A4F8F00869595 /* LaunchScreen.storyboard in Resources */,
+				D550A7782F6A4F8F00869595 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A79B2F6A97E400869595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A79C2F6A97E400869595 /* BSafesIOSAppIcon.png in Resources */,
+				D550A79D2F6A97E400869595 /* safes_360.png in Resources */,
+				D550A79E2F6A97E400869595 /* out in Resources */,
+				D550A79F2F6A97E400869595 /* LaunchScreen.storyboard in Resources */,
+				D550A7A02F6A97E400869595 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58E90CB2C23C3890017C57D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5609D1D2C2E9798006FAC30 /* BSafesIOSAppIcon.png in Resources */,
 				D5609D1B2C2E92BF006FAC30 /* safes_360.png in Resources */,
-				D58E90DA2C23C38B0017C57D /* Assets.xcassets in Resources */,
-				D53153EC2E125E7100390874 /* out in Resources */,
+				D57D293F2F581D0000082224 /* out in Resources */,
 				D5609D182C2E8F10006FAC30 /* LaunchScreen.storyboard in Resources */,
 				D58E90D82C23C3890017C57D /* Main.storyboard in Resources */,
 			);
@@ -403,9 +1292,213 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5A351382F625AC4004CC57F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A351392F625AC4004CC57F /* BSafesIOSAppIcon.png in Resources */,
+				D5A3513A2F625AC4004CC57F /* safes_360.png in Resources */,
+				D5A3513B2F625AC4004CC57F /* out in Resources */,
+				D5A3513C2F625AC4004CC57F /* LaunchScreen.storyboard in Resources */,
+				D5A3513D2F625AC4004CC57F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D39FAF2F63B0AE005D8F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D39FB02F63B0AE005D8F71 /* BSafesIOSAppIcon.png in Resources */,
+				D5D39FB12F63B0AE005D8F71 /* safes_360.png in Resources */,
+				D5D39FB22F63B0AE005D8F71 /* out in Resources */,
+				D5D39FB32F63B0AE005D8F71 /* LaunchScreen.storyboard in Resources */,
+				D5D39FB42F63B0AE005D8F71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E076A02F67C8A300BA3620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E076A12F67C8A300BA3620 /* BSafesIOSAppIcon.png in Resources */,
+				D5E076A22F67C8A300BA3620 /* safes_360.png in Resources */,
+				D5E076A32F67C8A300BA3620 /* out in Resources */,
+				D5E076A42F67C8A300BA3620 /* LaunchScreen.storyboard in Resources */,
+				D5E076A52F67C8A300BA3620 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E076C82F67D82500BA3620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E076C92F67D82500BA3620 /* BSafesIOSAppIcon.png in Resources */,
+				D5E076CA2F67D82500BA3620 /* safes_360.png in Resources */,
+				D5E076CB2F67D82500BA3620 /* out in Resources */,
+				D5E076CC2F67D82500BA3620 /* LaunchScreen.storyboard in Resources */,
+				D5E076CD2F67D82500BA3620 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D51E4F722F61126200855AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4F732F61126200855AF2 /* GCDWebServerFileRequest.m in Sources */,
+				D51E4F742F61126200855AF2 /* GCDWebServerStreamedResponse.m in Sources */,
+				D51E4F752F61126200855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D51E4F762F61126200855AF2 /* GCDWebServerDataRequest.m in Sources */,
+				D51E4F772F61126200855AF2 /* GCDWebServerDataResponse.m in Sources */,
+				D51E4F782F61126200855AF2 /* GCDWebServer.m in Sources */,
+				D51E4F792F61126200855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D51E4F7A2F61126200855AF2 /* ViewController.swift in Sources */,
+				D51E4F7B2F61126200855AF2 /* AppDelegate.swift in Sources */,
+				D51E4F7C2F61126200855AF2 /* GCDWebServerFunctions.m in Sources */,
+				D51E4F7D2F61126200855AF2 /* SceneDelegate.swift in Sources */,
+				D51E4F7E2F61126200855AF2 /* GCDWebServerResponse.m in Sources */,
+				D51E4F7F2F61126200855AF2 /* GCDWebServerErrorResponse.m in Sources */,
+				D51E4F802F61126200855AF2 /* confidentials.swift in Sources */,
+				D51E4F812F61126200855AF2 /* GCDWebServerConnection.m in Sources */,
+				D51E4F822F61126200855AF2 /* GCDWebServerRequest.m in Sources */,
+				D51E4F832F61126200855AF2 /* GCDWebServerFileResponse.m in Sources */,
+				D51E4F842F61126200855AF2 /* StoreKitHelper.swift in Sources */,
+				D51E4F852F61126200855AF2 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4F9B2F61325100855AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4F9C2F61325100855AF2 /* GCDWebServerFileRequest.m in Sources */,
+				D51E4F9D2F61325100855AF2 /* GCDWebServerStreamedResponse.m in Sources */,
+				D51E4F9E2F61325100855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D51E4F9F2F61325100855AF2 /* GCDWebServerDataRequest.m in Sources */,
+				D51E4FA02F61325100855AF2 /* GCDWebServerDataResponse.m in Sources */,
+				D51E4FA12F61325100855AF2 /* GCDWebServer.m in Sources */,
+				D51E4FA22F61325100855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D51E4FA32F61325100855AF2 /* ViewController.swift in Sources */,
+				D51E4FA42F61325100855AF2 /* AppDelegate.swift in Sources */,
+				D51E4FA52F61325100855AF2 /* GCDWebServerFunctions.m in Sources */,
+				D51E4FA62F61325100855AF2 /* SceneDelegate.swift in Sources */,
+				D51E4FA72F61325100855AF2 /* GCDWebServerResponse.m in Sources */,
+				D51E4FA82F61325100855AF2 /* GCDWebServerErrorResponse.m in Sources */,
+				D51E4FA92F61325100855AF2 /* confidentials.swift in Sources */,
+				D51E4FAA2F61325100855AF2 /* GCDWebServerConnection.m in Sources */,
+				D51E4FAB2F61325100855AF2 /* GCDWebServerRequest.m in Sources */,
+				D51E4FAC2F61325100855AF2 /* GCDWebServerFileResponse.m in Sources */,
+				D51E4FAD2F61325100855AF2 /* StoreKitHelper.swift in Sources */,
+				D51E4FAE2F61325100855AF2 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FC92F613F0000855AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FCA2F613F0000855AF2 /* GCDWebServerFileRequest.m in Sources */,
+				D51E4FCB2F613F0000855AF2 /* GCDWebServerStreamedResponse.m in Sources */,
+				D51E4FCC2F613F0000855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D51E4FCD2F613F0000855AF2 /* GCDWebServerDataRequest.m in Sources */,
+				D51E4FCE2F613F0000855AF2 /* GCDWebServerDataResponse.m in Sources */,
+				D51E4FCF2F613F0000855AF2 /* GCDWebServer.m in Sources */,
+				D51E4FD02F613F0000855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D51E4FD12F613F0000855AF2 /* ViewController.swift in Sources */,
+				D51E4FD22F613F0000855AF2 /* AppDelegate.swift in Sources */,
+				D51E4FD32F613F0000855AF2 /* GCDWebServerFunctions.m in Sources */,
+				D51E4FD42F613F0000855AF2 /* SceneDelegate.swift in Sources */,
+				D51E4FD52F613F0000855AF2 /* GCDWebServerResponse.m in Sources */,
+				D51E4FD62F613F0000855AF2 /* GCDWebServerErrorResponse.m in Sources */,
+				D51E4FD72F613F0000855AF2 /* confidentials.swift in Sources */,
+				D51E4FD82F613F0000855AF2 /* GCDWebServerConnection.m in Sources */,
+				D51E4FD92F613F0000855AF2 /* GCDWebServerRequest.m in Sources */,
+				D51E4FDA2F613F0000855AF2 /* GCDWebServerFileResponse.m in Sources */,
+				D51E4FDB2F613F0000855AF2 /* StoreKitHelper.swift in Sources */,
+				D51E4FDC2F613F0000855AF2 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51E4FF12F61453900855AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51E4FF22F61453900855AF2 /* GCDWebServerFileRequest.m in Sources */,
+				D51E4FF32F61453900855AF2 /* GCDWebServerStreamedResponse.m in Sources */,
+				D51E4FF42F61453900855AF2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D51E4FF52F61453900855AF2 /* GCDWebServerDataRequest.m in Sources */,
+				D51E4FF62F61453900855AF2 /* GCDWebServerDataResponse.m in Sources */,
+				D51E4FF72F61453900855AF2 /* GCDWebServer.m in Sources */,
+				D51E4FF82F61453900855AF2 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D51E4FF92F61453900855AF2 /* ViewController.swift in Sources */,
+				D51E4FFA2F61453900855AF2 /* AppDelegate.swift in Sources */,
+				D51E4FFB2F61453900855AF2 /* GCDWebServerFunctions.m in Sources */,
+				D51E4FFC2F61453900855AF2 /* SceneDelegate.swift in Sources */,
+				D51E4FFD2F61453900855AF2 /* GCDWebServerResponse.m in Sources */,
+				D51E4FFE2F61453900855AF2 /* GCDWebServerErrorResponse.m in Sources */,
+				D51E4FFF2F61453900855AF2 /* confidentials.swift in Sources */,
+				D51E50002F61453900855AF2 /* GCDWebServerConnection.m in Sources */,
+				D51E50012F61453900855AF2 /* GCDWebServerRequest.m in Sources */,
+				D51E50022F61453900855AF2 /* GCDWebServerFileResponse.m in Sources */,
+				D51E50032F61453900855AF2 /* StoreKitHelper.swift in Sources */,
+				D51E50042F61453900855AF2 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A75D2F6A4F8F00869595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A75E2F6A4F8F00869595 /* GCDWebServerFileRequest.m in Sources */,
+				D550A75F2F6A4F8F00869595 /* GCDWebServerStreamedResponse.m in Sources */,
+				D550A7602F6A4F8F00869595 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D550A7612F6A4F8F00869595 /* GCDWebServerDataRequest.m in Sources */,
+				D550A7622F6A4F8F00869595 /* GCDWebServerDataResponse.m in Sources */,
+				D550A7632F6A4F8F00869595 /* GCDWebServer.m in Sources */,
+				D550A7642F6A4F8F00869595 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D550A7652F6A4F8F00869595 /* ViewController.swift in Sources */,
+				D550A7662F6A4F8F00869595 /* AppDelegate.swift in Sources */,
+				D550A7672F6A4F8F00869595 /* GCDWebServerFunctions.m in Sources */,
+				D550A7682F6A4F8F00869595 /* SceneDelegate.swift in Sources */,
+				D550A7692F6A4F8F00869595 /* GCDWebServerResponse.m in Sources */,
+				D550A76A2F6A4F8F00869595 /* GCDWebServerErrorResponse.m in Sources */,
+				D550A76B2F6A4F8F00869595 /* confidentials.swift in Sources */,
+				D550A76C2F6A4F8F00869595 /* GCDWebServerConnection.m in Sources */,
+				D550A76D2F6A4F8F00869595 /* GCDWebServerRequest.m in Sources */,
+				D550A76E2F6A4F8F00869595 /* GCDWebServerFileResponse.m in Sources */,
+				D550A76F2F6A4F8F00869595 /* StoreKitHelper.swift in Sources */,
+				D550A7702F6A4F8F00869595 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D550A7852F6A97E400869595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D550A7862F6A97E400869595 /* GCDWebServerFileRequest.m in Sources */,
+				D550A7872F6A97E400869595 /* GCDWebServerStreamedResponse.m in Sources */,
+				D550A7882F6A97E400869595 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D550A7892F6A97E400869595 /* GCDWebServerDataRequest.m in Sources */,
+				D550A78A2F6A97E400869595 /* GCDWebServerDataResponse.m in Sources */,
+				D550A78B2F6A97E400869595 /* GCDWebServer.m in Sources */,
+				D550A78C2F6A97E400869595 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D550A78D2F6A97E400869595 /* ViewController.swift in Sources */,
+				D550A78E2F6A97E400869595 /* AppDelegate.swift in Sources */,
+				D550A78F2F6A97E400869595 /* GCDWebServerFunctions.m in Sources */,
+				D550A7902F6A97E400869595 /* SceneDelegate.swift in Sources */,
+				D550A7912F6A97E400869595 /* GCDWebServerResponse.m in Sources */,
+				D550A7922F6A97E400869595 /* GCDWebServerErrorResponse.m in Sources */,
+				D550A7932F6A97E400869595 /* confidentials.swift in Sources */,
+				D550A7942F6A97E400869595 /* GCDWebServerConnection.m in Sources */,
+				D550A7952F6A97E400869595 /* GCDWebServerRequest.m in Sources */,
+				D550A7962F6A97E400869595 /* GCDWebServerFileResponse.m in Sources */,
+				D550A7972F6A97E400869595 /* StoreKitHelper.swift in Sources */,
+				D550A7982F6A97E400869595 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D58E90C92C23C3890017C57D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +1542,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5A351222F625AC4004CC57F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A351232F625AC4004CC57F /* GCDWebServerFileRequest.m in Sources */,
+				D5A351242F625AC4004CC57F /* GCDWebServerStreamedResponse.m in Sources */,
+				D5A351252F625AC4004CC57F /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D5A351262F625AC4004CC57F /* GCDWebServerDataRequest.m in Sources */,
+				D5A351272F625AC4004CC57F /* GCDWebServerDataResponse.m in Sources */,
+				D5A351282F625AC4004CC57F /* GCDWebServer.m in Sources */,
+				D5A351292F625AC4004CC57F /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D5A3512A2F625AC4004CC57F /* ViewController.swift in Sources */,
+				D5A3512B2F625AC4004CC57F /* AppDelegate.swift in Sources */,
+				D5A3512C2F625AC4004CC57F /* GCDWebServerFunctions.m in Sources */,
+				D5A3512D2F625AC4004CC57F /* SceneDelegate.swift in Sources */,
+				D5A3512E2F625AC4004CC57F /* GCDWebServerResponse.m in Sources */,
+				D5A3512F2F625AC4004CC57F /* GCDWebServerErrorResponse.m in Sources */,
+				D5A351302F625AC4004CC57F /* confidentials.swift in Sources */,
+				D5A351312F625AC4004CC57F /* GCDWebServerConnection.m in Sources */,
+				D5A351322F625AC4004CC57F /* GCDWebServerRequest.m in Sources */,
+				D5A351332F625AC4004CC57F /* GCDWebServerFileResponse.m in Sources */,
+				D5A351342F625AC4004CC57F /* StoreKitHelper.swift in Sources */,
+				D5A351352F625AC4004CC57F /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D39F992F63B0AE005D8F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D39F9A2F63B0AE005D8F71 /* GCDWebServerFileRequest.m in Sources */,
+				D5D39F9B2F63B0AE005D8F71 /* GCDWebServerStreamedResponse.m in Sources */,
+				D5D39F9C2F63B0AE005D8F71 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D5D39F9D2F63B0AE005D8F71 /* GCDWebServerDataRequest.m in Sources */,
+				D5D39F9E2F63B0AE005D8F71 /* GCDWebServerDataResponse.m in Sources */,
+				D5D39F9F2F63B0AE005D8F71 /* GCDWebServer.m in Sources */,
+				D5D39FA02F63B0AE005D8F71 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D5D39FA12F63B0AE005D8F71 /* ViewController.swift in Sources */,
+				D5D39FA22F63B0AE005D8F71 /* AppDelegate.swift in Sources */,
+				D5D39FA32F63B0AE005D8F71 /* GCDWebServerFunctions.m in Sources */,
+				D5D39FA42F63B0AE005D8F71 /* SceneDelegate.swift in Sources */,
+				D5D39FA52F63B0AE005D8F71 /* GCDWebServerResponse.m in Sources */,
+				D5D39FA62F63B0AE005D8F71 /* GCDWebServerErrorResponse.m in Sources */,
+				D5D39FA72F63B0AE005D8F71 /* confidentials.swift in Sources */,
+				D5D39FA82F63B0AE005D8F71 /* GCDWebServerConnection.m in Sources */,
+				D5D39FA92F63B0AE005D8F71 /* GCDWebServerRequest.m in Sources */,
+				D5D39FAA2F63B0AE005D8F71 /* GCDWebServerFileResponse.m in Sources */,
+				D5D39FAB2F63B0AE005D8F71 /* StoreKitHelper.swift in Sources */,
+				D5D39FAC2F63B0AE005D8F71 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E0768A2F67C8A300BA3620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E0768B2F67C8A300BA3620 /* GCDWebServerFileRequest.m in Sources */,
+				D5E0768C2F67C8A300BA3620 /* GCDWebServerStreamedResponse.m in Sources */,
+				D5E0768D2F67C8A300BA3620 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D5E0768E2F67C8A300BA3620 /* GCDWebServerDataRequest.m in Sources */,
+				D5E0768F2F67C8A300BA3620 /* GCDWebServerDataResponse.m in Sources */,
+				D5E076902F67C8A300BA3620 /* GCDWebServer.m in Sources */,
+				D5E076912F67C8A300BA3620 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D5E076922F67C8A300BA3620 /* ViewController.swift in Sources */,
+				D5E076932F67C8A300BA3620 /* AppDelegate.swift in Sources */,
+				D5E076942F67C8A300BA3620 /* GCDWebServerFunctions.m in Sources */,
+				D5E076952F67C8A300BA3620 /* SceneDelegate.swift in Sources */,
+				D5E076962F67C8A300BA3620 /* GCDWebServerResponse.m in Sources */,
+				D5E076972F67C8A300BA3620 /* GCDWebServerErrorResponse.m in Sources */,
+				D5E076982F67C8A300BA3620 /* confidentials.swift in Sources */,
+				D5E076992F67C8A300BA3620 /* GCDWebServerConnection.m in Sources */,
+				D5E0769A2F67C8A300BA3620 /* GCDWebServerRequest.m in Sources */,
+				D5E0769B2F67C8A300BA3620 /* GCDWebServerFileResponse.m in Sources */,
+				D5E0769C2F67C8A300BA3620 /* StoreKitHelper.swift in Sources */,
+				D5E0769D2F67C8A300BA3620 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E076B22F67D82500BA3620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E076B32F67D82500BA3620 /* GCDWebServerFileRequest.m in Sources */,
+				D5E076B42F67D82500BA3620 /* GCDWebServerStreamedResponse.m in Sources */,
+				D5E076B52F67D82500BA3620 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				D5E076B62F67D82500BA3620 /* GCDWebServerDataRequest.m in Sources */,
+				D5E076B72F67D82500BA3620 /* GCDWebServerDataResponse.m in Sources */,
+				D5E076B82F67D82500BA3620 /* GCDWebServer.m in Sources */,
+				D5E076B92F67D82500BA3620 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				D5E076BA2F67D82500BA3620 /* ViewController.swift in Sources */,
+				D5E076BB2F67D82500BA3620 /* AppDelegate.swift in Sources */,
+				D5E076BC2F67D82500BA3620 /* GCDWebServerFunctions.m in Sources */,
+				D5E076BD2F67D82500BA3620 /* SceneDelegate.swift in Sources */,
+				D5E076BE2F67D82500BA3620 /* GCDWebServerResponse.m in Sources */,
+				D5E076BF2F67D82500BA3620 /* GCDWebServerErrorResponse.m in Sources */,
+				D5E076C02F67D82500BA3620 /* confidentials.swift in Sources */,
+				D5E076C12F67D82500BA3620 /* GCDWebServerConnection.m in Sources */,
+				D5E076C22F67D82500BA3620 /* GCDWebServerRequest.m in Sources */,
+				D5E076C32F67D82500BA3620 /* GCDWebServerFileResponse.m in Sources */,
+				D5E076C42F67D82500BA3620 /* StoreKitHelper.swift in Sources */,
+				D5E076C52F67D82500BA3620 /* CheckOut.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -476,6 +1673,426 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D51E4F8F2F61126200855AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51E4F902F61126200855AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D51E4FB82F61325100855AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP02;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51E4FB92F61325100855AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP02;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D51E4FE62F613F0000855AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP03;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP03;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51E4FE72F613F0000855AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AP03;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AP03;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D51E500E2F61453900855AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AL01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AL01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51E500F2F61453900855AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AL01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AL01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D550A77A2F6A4F8F00869595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tropic Oasis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS06;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D550A77B2F6A4F8F00869595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tropic Oasis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS06;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D550A7A22F6A97E400869595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bllom & Wing";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS07;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D550A7A32F6A97E400869595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bllom & Wing";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS07;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D58E90F52C23C38C0017C57D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -535,6 +2152,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -606,7 +2224,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BSafes;
+				INFOPLIST_KEY_CFBundleDisplayName = BSafe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
@@ -641,7 +2259,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BSafes;
+				INFOPLIST_KEY_CFBundleDisplayName = BSafe;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
@@ -737,9 +2355,343 @@
 			};
 			name = Release;
 		};
+		D5A3513F2F625AC4004CC57F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AF01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AF01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5A351402F625AC4004CC57F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AF01;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AF01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5D39FB62F63B0AE005D8F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Princess";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5D39FB72F63B0AE005D8F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Little Princess";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5E076A72F67C8A300BA3620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zephyr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5E076A82F67C8A300BA3620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zephyr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS02;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5E076CF2F67D82500BA3620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Argyle;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS04;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5E076D02F67D82500BA3620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5K8R88NQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
+				INFOPLIST_FILE = BSafes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Argyle;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wunantechinc.ios.BSafes.AS04;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "GCDWebServer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D51E4F8E2F61126200855AF2 /* Build configuration list for PBXNativeTarget "AP01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51E4F8F2F61126200855AF2 /* Debug */,
+				D51E4F902F61126200855AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51E4FB72F61325100855AF2 /* Build configuration list for PBXNativeTarget "AP02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51E4FB82F61325100855AF2 /* Debug */,
+				D51E4FB92F61325100855AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51E4FE52F613F0000855AF2 /* Build configuration list for PBXNativeTarget "AP03" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51E4FE62F613F0000855AF2 /* Debug */,
+				D51E4FE72F613F0000855AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D51E500D2F61453900855AF2 /* Build configuration list for PBXNativeTarget "AL01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51E500E2F61453900855AF2 /* Debug */,
+				D51E500F2F61453900855AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D550A7792F6A4F8F00869595 /* Build configuration list for PBXNativeTarget "AS06" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D550A77A2F6A4F8F00869595 /* Debug */,
+				D550A77B2F6A4F8F00869595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D550A7A12F6A97E400869595 /* Build configuration list for PBXNativeTarget "AS07" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D550A7A22F6A97E400869595 /* Debug */,
+				D550A7A32F6A97E400869595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D58E90C82C23C3890017C57D /* Build configuration list for PBXProject "BSafes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -772,6 +2724,42 @@
 			buildConfigurations = (
 				D58E90FE2C23C38C0017C57D /* Debug */,
 				D58E90FF2C23C38C0017C57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A3513E2F625AC4004CC57F /* Build configuration list for PBXNativeTarget "AF01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A3513F2F625AC4004CC57F /* Debug */,
+				D5A351402F625AC4004CC57F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D39FB52F63B0AE005D8F71 /* Build configuration list for PBXNativeTarget "AS11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D39FB62F63B0AE005D8F71 /* Debug */,
+				D5D39FB72F63B0AE005D8F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5E076A62F67C8A300BA3620 /* Build configuration list for PBXNativeTarget "AS02" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E076A72F67C8A300BA3620 /* Debug */,
+				D5E076A82F67C8A300BA3620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5E076CE2F67D82500BA3620 /* Build configuration list for PBXNativeTarget "AS04" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E076CF2F67D82500BA3620 /* Debug */,
+				D5E076D02F67D82500BA3620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
