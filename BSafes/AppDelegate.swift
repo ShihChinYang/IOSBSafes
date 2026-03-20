@@ -9,20 +9,24 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     let webServer = GCDWebServer()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let subdir = Bundle.main.resourceURL!.appendingPathComponent("out").path
-        webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
-        do {
-            try webServer.start(options:[
-                "Port": 8087,
-                "BindToLocalhost": true
-            ])
-        } catch {
-            fatalError("Can't start GCD web server")
+        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
+            print("WEBSERVER_PORT is: \(webserverPort)")
+            let subdir = Bundle.main.resourceURL!.appendingPathComponent("out").path
+            webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
+            do {
+                try webServer.start(options:[
+                    "Port": Int(webserverPort) ?? 8080,
+                    "BindToLocalhost": true
+                ])
+            } catch {
+                fatalError("Can't start GCD web server")
+            }
+        } else {
+            fatalError("Missing WEBSERVER_PORT")
         }
         return true
     }

@@ -42,14 +42,18 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         self.view = self.webView
         let testWith3000 = false
         let url: URL!
-        if !testWith3000 {
-            url = URL(string: "http://localhost:8087")!
-            self.localHost = "http://localhost:8087"
+        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
+            if !testWith3000 {
+                url = URL(string: "http://localhost:\(webserverPort)")!
+                self.localHost = "http://localhost:\(webserverPort)"
+            } else {
+                url = URL(string: "http://localhost:3000")!
+                self.localHost = "http://localhost:3000"
+            }
+            self.webView.load(URLRequest(url: url))
         } else {
-            url = URL(string: "http://localhost:3000")!
-            self.localHost = "http://localhost:3000"
+            print("Missing WEBSERVER PORT")
         }
-        self.webView.load(URLRequest(url: url))
     }
     
     @objc func fireTimer() {
