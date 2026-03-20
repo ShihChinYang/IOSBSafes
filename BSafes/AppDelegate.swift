@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
         do {
             try webServer.start(options:[
-                "Port": 8080,
+                "Port": 8087,
                 "BindToLocalhost": true
             ])
         } catch {

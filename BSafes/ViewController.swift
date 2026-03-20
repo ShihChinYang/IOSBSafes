@@ -26,6 +26,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     var appLoaded: Bool = false
     var pendingTransaction: Transaction? = nil
     var fileDestinationURL: URL?
+    var pingCount = 0
     let documentInteractionController = UIDocumentInteractionController()
     
     func addWebView() {
@@ -42,8 +43,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         let testWith3000 = false
         let url: URL!
         if !testWith3000 {
-            url = URL(string: "http://localhost:8080")!
-            self.localHost = "http://localhost:8080"
+            url = URL(string: "http://localhost:8087")!
+            self.localHost = "http://localhost:8087"
         } else {
             url = URL(string: "http://localhost:3000")!
             self.localHost = "http://localhost:3000"
@@ -52,14 +53,17 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     }
     
     @objc func fireTimer() {
-        print("Timer fired!")
-        if appLoaded == false {
+        print("Timer fired! appLoaded:\(appLoaded), pingCount:\(pingCount)")
+        pingCount += 1
+        if pingCount > 2 && appLoaded == false {
+            print("pingCount is greater than 2, reload webview")
             webView?.reload();
         }
         let script = "window.bsafesNative.pingFromNative();"
         webView.evaluateJavaScript(script) { (result, error) in
             if let result = result {
                 print("pingFromNative result: \(result)")
+                self.appLoaded = true
             } else if let error = error {
                 print("An error occurred: \(error)")
                 //self.addWebView()
@@ -122,6 +126,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         appLoaded = true
         
         if let action = dict["action"] {
+            print("Action request from webview: \(action)")
             switch action {
             case "getAccessKey":
                 let localhostAccessKeyId = AccessKeyInfo.localhostAccessKeyId
