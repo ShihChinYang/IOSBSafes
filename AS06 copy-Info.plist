@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WEBSERVER_PORT</key>
+	<string>$(WEBSERVER_PORT)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>WKAppBoundDomains</key>
+	<array>
+		<string>localhost:8080</string>
+		<string>bsafes.com</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Allows you to take a photo or video.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allows you to use the microphone.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Allowing saving to photos</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>
