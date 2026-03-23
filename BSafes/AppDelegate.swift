@@ -9,11 +9,11 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let webServer = GCDWebServer()
+    //let webServer = GCDWebServer()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
+        /*if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
             print("WEBSERVER_PORT is: \(webserverPort)")
             let subdir = Bundle.main.resourceURL!.appendingPathComponent("out").path
             webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         } else {
             fatalError("Missing WEBSERVER_PORT")
-        }
+        }*/
         return true
     }
 

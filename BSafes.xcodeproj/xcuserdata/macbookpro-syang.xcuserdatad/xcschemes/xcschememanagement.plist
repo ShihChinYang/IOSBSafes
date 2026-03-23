@@ -39,20 +39,40 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>AS05.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>AS06.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>1</integer>
 		</dict>
 		<key>AS07.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>2</integer>
+		</dict>
+		<key>AS08.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>AS09.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>AS10.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>AS11.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 		<key>BSafes.xcscheme_^#shared#^_</key>
 		<dict>
@@ -115,6 +135,31 @@
 			<true/>
 		</dict>
 		<key>D58E90EC2C23C38C0017C57D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D597D6F62F70D9000079890E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D597D7932F7123780079890E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D597D7CB2F7125C90079890E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D597D8122F7128050079890E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D597D8472F712EF50079890E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

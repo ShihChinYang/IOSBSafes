@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $1
+rm -rf out/*
+cp -r ./productsWebResource/$1/* out/.

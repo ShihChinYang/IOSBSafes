@@ -18,8 +18,9 @@ extension URL {
     }
 }
 
-class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate, WKUIDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate, WKUIDelegate, WKScriptMessageHandler, UIDocumentInteractionControllerDelegate, GCDWebServerDelegate {
     
+    let webServer = GCDWebServer()
     var webView: WKWebView!
     var localHost: String!
     var timer: Timer!
@@ -40,6 +41,43 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         let contentController = self.webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         self.view = self.webView
+        /*let testWith3000 = false
+        let url: URL!
+        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
+            if !testWith3000 {
+                url = URL(string: "http://localhost:\(webserverPort)")!
+                self.localHost = "http://localhost:\(webserverPort)"
+            } else {
+                url = URL(string: "http://localhost:3000")!
+                self.localHost = "http://localhost:3000"
+            }
+            self.webView.load(URLRequest(url: url))
+        } else {
+            print("Missing WEBSERVER PORT")
+        }*/
+    }
+    
+    func startServer () {
+        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
+            print("WEBSERVER_PORT is: \(webserverPort)")
+            let subdir = Bundle.main.resourceURL!.appendingPathComponent("out").path
+            webServer.delegate = self
+            webServer.addGETHandler(forBasePath: "/", directoryPath: subdir, indexFilename: "index.html", cacheAge: 3600, allowRangeRequests: true)
+            do {
+                try webServer.start(options:[
+                    "Port": Int(webserverPort) ?? 8080,
+                    "BindToLocalhost": true
+                ])
+            } catch {
+                fatalError("Can't start GCD web server")
+            }
+        } else {
+            fatalError("Missing WEBSERVER_PORT")
+        }
+    }
+    
+    func webServerDidStart(_ server: GCDWebServer) {
+        print("Server did start: \(webServer.serverURL, default: "")")
         let testWith3000 = false
         let url: URL!
         if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
@@ -51,6 +89,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                 self.localHost = "http://localhost:3000"
             }
             self.webView.load(URLRequest(url: url))
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
         } else {
             print("Missing WEBSERVER PORT")
         }
@@ -77,23 +116,25 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     override func loadView() {
         addWebView()
-        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
     @objc func appDidBecomeActive() {
         print("App did become active (UIViewController)")
-        let script = "window.bsafesNative.pingFromNative();"
-        webView.evaluateJavaScript(script) { (result, error) in
-            if let result = result {
-                print("pingFromNative result: \(result)")
-            } else if let error = error {
-                print("An error occurred: \(error)")
+        if(appLoaded){
+            let script = "window.bsafesNative.pingFromNative();"
+            webView.evaluateJavaScript(script) { (result, error) in
+                if let result = result {
+                    print("pingFromNative result: \(result)")
+                } else if let error = error {
+                    print("An error occurred: \(error)")
+                }
             }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startServer()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
 
