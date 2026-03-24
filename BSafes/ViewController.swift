@@ -78,6 +78,9 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     func webServerDidStart(_ server: GCDWebServer) {
         print("Server did start: \(webServer.serverURL, default: "")")
+        if appLoaded {
+            return;
+        }
         let testWith3000 = false
         let url: URL!
         if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
@@ -89,7 +92,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                 self.localHost = "http://localhost:3000"
             }
             self.webView.load(URLRequest(url: url))
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
         } else {
             print("Missing WEBSERVER PORT")
         }
@@ -99,8 +102,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         print("Timer fired! appLoaded:\(appLoaded), pingCount:\(pingCount)")
         pingCount += 1
         if pingCount > 2 && appLoaded == false {
-            print("pingCount is greater than 2, reload webview")
-            webView?.reload();
+            //print("pingCount is greater than 2, reload webview")
+            //webView?.reload();
         }
         let script = "window.bsafesNative.pingFromNative();"
         webView.evaluateJavaScript(script) { (result, error) in
@@ -120,7 +123,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     @objc func appDidBecomeActive() {
         print("App did become active (UIViewController)")
-        if(appLoaded){
+        //if(appLoaded){
             let script = "window.bsafesNative.pingFromNative();"
             webView.evaluateJavaScript(script) { (result, error) in
                 if let result = result {
@@ -129,7 +132,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                     print("An error occurred: \(error)")
                 }
             }
-        }
+        //}
     }
     
     override func viewDidLoad() {
