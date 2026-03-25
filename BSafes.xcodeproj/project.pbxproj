@@ -264,8 +264,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D53743D72F6D7A1600BB555E /* BSafesConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BSafesConfig.xcconfig; sourceTree = "<group>"; };
-		D53743E32F6D840600BB555E /* AS06Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AS06Config.xcconfig; sourceTree = "<group>"; };
 		D550A77C2F6A4F8F00869595 /* AS06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D550A7A42F6A97E400869595 /* AS07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS07.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55134EF2C25277600D31E28 /* CheckOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOut.swift; sourceTree = "<group>"; };
@@ -837,8 +835,6 @@
 		D597D62B2F70D09F0079890E /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				D53743D72F6D7A1600BB555E /* BSafesConfig.xcconfig */,
-				D53743E32F6D840600BB555E /* AS06Config.xcconfig */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1694,7 +1690,7 @@
 		D57DE1062F72192300FC3CB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = D51E4F962F6114AE00855AF2 /* products */;
-			baseConfigurationReferenceRelativePath = AS06/AS06Config.xcconfig;
+			baseConfigurationReferenceRelativePath = AS04/AS04Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1731,7 +1727,7 @@
 		D57DE1072F72192300FC3CB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = D51E4F962F6114AE00855AF2 /* products */;
-			baseConfigurationReferenceRelativePath = AS06/AS06Config.xcconfig;
+			baseConfigurationReferenceRelativePath = AS04/AS04Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

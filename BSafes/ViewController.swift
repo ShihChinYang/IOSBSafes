@@ -23,7 +23,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     let webServer = GCDWebServer()
     var webView: WKWebView!
     var localHost: String!
-    var timer: Timer!
+    var timer: Timer? = nil
     var appLoaded: Bool = false
     var pendingTransaction: Transaction? = nil
     var fileDestinationURL: URL?
@@ -41,20 +41,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         let contentController = self.webView.configuration.userContentController
         contentController.add(self, name: "toggleMessageHandler")
         self.view = self.webView
-        /*let testWith3000 = false
-        let url: URL!
-        if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
-            if !testWith3000 {
-                url = URL(string: "http://localhost:\(webserverPort)")!
-                self.localHost = "http://localhost:\(webserverPort)"
-            } else {
-                url = URL(string: "http://localhost:3000")!
-                self.localHost = "http://localhost:3000"
-            }
-            self.webView.load(URLRequest(url: url))
-        } else {
-            print("Missing WEBSERVER PORT")
-        }*/
     }
     
     func startServer () {
@@ -92,7 +78,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                 self.localHost = "http://localhost:3000"
             }
             self.webView.load(URLRequest(url: url))
-            timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
         } else {
             print("Missing WEBSERVER PORT")
         }
@@ -105,14 +90,16 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
             //print("pingCount is greater than 2, reload webview")
             //webView?.reload();
         }
-        let script = "window.bsafesNative.pingFromNative();"
-        webView.evaluateJavaScript(script) { (result, error) in
-            if let result = result {
-                print("pingFromNative result: \(result)")
-                self.appLoaded = true
-            } else if let error = error {
-                print("An error occurred: \(error)")
-                //self.addWebView()
+        DispatchQueue.main.async {
+            let script = "window.bsafesNative.pingFromNative();"
+            self.webView.evaluateJavaScript(script) { (result, error) in
+                if let result = result {
+                    print("pingFromNative result: \(result)")
+                    self.appLoaded = true
+                } else if let error = error {
+                    print("An error occurred: \(error)")
+                    //self.addWebView()
+                }
             }
         }
     }
@@ -123,7 +110,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     @objc func appDidBecomeActive() {
         print("App did become active (UIViewController)")
-        //if(appLoaded){
+        if(appLoaded){
             let script = "window.bsafesNative.pingFromNative();"
             webView.evaluateJavaScript(script) { (result, error) in
                 if let result = result {
@@ -132,13 +119,28 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                     print("An error occurred: \(error)")
                 }
             }
-        //}
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         startServer()
         NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    func webView(_ webView:WKWebView, didStartProvisionalNavigation navigation:WKNavigation) {
+        print("webView didStartProvisionalNavigation")
+        if(timer != nil){
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+    
+    func webView(_ webView:WKWebView, didFinish navigation:WKNavigation) {
+        print("webView didFinish")
+        if(timer==nil){
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        }
     }
 
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
@@ -165,6 +167,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         }))
         self.present(alertController, animated: true, completion: nil)
     }
+    
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let dict = message.body as? [String : String] else {
@@ -213,7 +216,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, preferences: WKWebpagePreferences, decisionHandler: @escaping (WKNavigationActionPolicy, WKWebpagePreferences) -> Void) {
-        print(navigationAction)
+        //print(navigationAction)
         if navigationAction.shouldPerformDownload {
             decisionHandler(.download, preferences)
             return
@@ -252,7 +255,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
                 }
             }
         } else {
-            print("not a user link")
+            //print("not a user link")
             decisionHandler(.allow, preferences)
             return
         }
