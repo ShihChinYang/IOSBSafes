@@ -130,6 +130,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     func webView(_ webView:WKWebView, didStartProvisionalNavigation navigation:WKNavigation) {
         print("webView didStartProvisionalNavigation")
+        if let urlString = webView.url?.absoluteString {
+            print("URL: \(urlString)")
+            // Update UI, save the URL, etc.
+        }
         if(timer != nil){
             timer?.invalidate()
             timer = nil
@@ -138,6 +142,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
     
     func webView(_ webView:WKWebView, didFinish navigation:WKNavigation) {
         print("webView didFinish")
+        if let urlString = webView.url?.absoluteString {
+            print("URL: \(urlString)")
+            // Update UI, save the URL, etc.
+        }
         if(timer==nil){
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
         }

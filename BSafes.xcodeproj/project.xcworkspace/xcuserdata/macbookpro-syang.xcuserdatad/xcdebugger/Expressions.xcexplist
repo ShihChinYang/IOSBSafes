@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.webView(_:didStartProvisionalNavigation:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ViewController.fireTimer():ViewController.swift">
          <PersistentStrings>
             <PersistentString
