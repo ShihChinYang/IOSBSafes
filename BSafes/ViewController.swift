@@ -356,7 +356,9 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
             pendingTransaction = transaction
             let purchaseTime = Int(transaction.purchaseDate.timeIntervalSince1970 * 1000);
             print(purchaseTime);
-            script = "window.bsafesNative.transactionWebCall({status: \"ok\", transaction: { time: \(purchaseTime), id:\"\(transaction.id)\", originalId:\"\(transaction.originalID)\"}});"
+            let sandboxTesting = false
+            script = "window.bsafesNative.transactionWebCall({status: \"ok\", transaction: { isSandboxTesting: \(sandboxTesting), time: \(purchaseTime), id:\"\(transaction.id)\", originalId:\"\(transaction.originalID)\"}});"
+  
 
         } else {
             script = "window.bsafesNative.transactionWebCall({status: \"error\"})"

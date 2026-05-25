@@ -109,6 +109,7 @@
 		D58E912B2C23C6EA0017C57D /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911D2C23C6EA0017C57D /* GCDWebServerDataRequest.m */; };
 		D58E912C2C23C6EA0017C57D /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
 		D58E912F2C23C95F0017C57D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D58E912E2C23C95F0017C57D /* libz.tbd */; };
+		D5947B042FC02F1900BE6BAD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5947B032FC02F1900BE6BAD /* StoreKit.framework */; };
 		D597D6F82F70D9000079890E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911E2C23C6EA0017C57D /* GCDWebServerFileRequest.m */; };
 		D597D6F92F70D9000079890E /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E91162C23C6EA0017C57D /* GCDWebServerStreamedResponse.m */; };
 		D597D6FA2F70D9000079890E /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E911C2C23C6EA0017C57D /* GCDWebServerMultiPartFormRequest.m */; };
@@ -313,6 +314,7 @@
 		D58E911F2C23C6EA0017C57D /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 		D58E912E2C23C95F0017C57D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D58E91302C23D2B30017C57D /* GCDWebServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5947B032FC02F1900BE6BAD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D597D7162F70D9000079890E /* AS05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D597D78D2F70DBD10079890E /* BSafesConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BSafesConfig.xcconfig; sourceTree = "<group>"; };
 		D597D7B42F7123780079890E /* AS11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AS11.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -625,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58E912F2C23C95F0017C57D /* libz.tbd in Frameworks */,
+				D5947B042FC02F1900BE6BAD /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +830,7 @@
 		D58E912D2C23C95E0017C57D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5947B032FC02F1900BE6BAD /* StoreKit.framework */,
 				D58E912E2C23C95F0017C57D /* libz.tbd */,
 			);
 			name = Frameworks;
