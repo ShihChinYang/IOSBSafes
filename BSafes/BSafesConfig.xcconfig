@@ -7,4 +7,6 @@
 
 // Configuration settings file format documentation can be found at:
 // https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+APP_ID = 6612017394
+BUNDLE_ID = com.wunantechinc.ios.BSafes
 WEBSERVER_PORT = 8080
