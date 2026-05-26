@@ -69,6 +69,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
         }
         let testWith3000 = false
         let url: URL!
+        let sandboxTesting = true
         if let webserverPort = Bundle.main.infoDictionary?["WEBSERVER_PORT"] as? String {
             if !testWith3000 {
                 url = URL(string: "http://localhost:\(webserverPort)")!
@@ -359,8 +360,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKDownloadDelegate
             let sandboxTesting = true
             let appId = Bundle.main.infoDictionary?["APP_ID"] as? String
             let bundleId = Bundle.main.infoDictionary?["BUNDLE_ID"] as? String
-            script = "window.bsafesNative.transactionWebCall({status: \"ok\", transaction: { isSandboxTesting: \(sandboxTesting), time: \(purchaseTime), appId:\"6612017394\", bundleId:\"com.wunantechinc.ios.BSafes\",  id:\"\(transaction.id)\", originalId:\"\(transaction.originalID)\"}});"
-  
+            script = "window.bsafesNative.transactionWebCall({status: \"ok\", transaction: { isSandboxTesting: \(sandboxTesting), time: \(purchaseTime), appId:\"\(appId ?? "")\", bundleId:\"\(bundleId ?? "")\",  id:\"\(transaction.id)\", originalId:\"\(transaction.originalID)\"}});"
 
         } else {
             script = "window.bsafesNative.transactionWebCall({status: \"error\"})"

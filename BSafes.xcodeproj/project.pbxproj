@@ -1898,9 +1898,11 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BSafe;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allowing saving to photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1934,9 +1936,11 @@
 				"HEADER_SEARCH_PATHS[arch=*]" = "GCDWebServer/**";
 				INFOPLIST_FILE = BSafes/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BSafe;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allows you to take a photo or video.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allows you to use the microphone.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allowing saving to photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
