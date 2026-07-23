@@ -1,5 +1,6 @@
 #!/bin/bash
-echo $1
+echo $
+mkdir -p "productsWebResource"
 rm -rf out/*
 rm -rf ./productsWebResource/$1
 mv ~/WuNanTech/BSafesV2/BSafes_Frontend_Next/out ./productsWebResource/$1

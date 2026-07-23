@@ -1,0 +1,12 @@
+//
+//  AS10Config.xcconfig
+//  BSafes
+//
+//  Created by MacBook Pro - SYang on 3/23/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+APP_ID = 6793785119
+BUNDLE_ID = com.wunantechinc.ios.BSafes.AP01
+WEBSERVER_PORT = 58101
